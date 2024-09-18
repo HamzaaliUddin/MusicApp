@@ -201,10 +201,8 @@ export const delay = (ms: number) =>
  * @returns
  */
 export const title = (locale: any, name: string) => {
-  const { textColor } = useTheme();
-
   return locale.markup(name, {
-    primary: (chunks: any) => `<span class="${textColor}">${chunks}</span>`,
+    primary: (chunks: any) => `<span class="btn-danger">${chunks}</span>`,
   });
 };
 

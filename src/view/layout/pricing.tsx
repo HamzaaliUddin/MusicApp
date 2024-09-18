@@ -47,7 +47,7 @@ const propTypes = {
 const Pricing: React.FC<Props> = ({ data, userPlan, showLink }) => {
   const { replaceClassName } = useTheme();
   const pricing = useTranslations("pricing");
-  const { textColor } = useTheme();
+  // const { textColor } = useTheme();
 
   return (
     <>
@@ -70,7 +70,7 @@ const Pricing: React.FC<Props> = ({ data, userPlan, showLink }) => {
                 {plan.features.map((feature) => (
                   <div className="d-flex mb-3" key={feature.id}>
                     <RiCheckboxCircleFill
-                      className={`${textColor} opacity-75`}
+                      className={`text-danger opacity-75`}
                       size={16}
                     />
                     <span className={replaceClassName("ps-2")}>

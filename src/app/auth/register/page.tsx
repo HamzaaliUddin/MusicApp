@@ -11,7 +11,7 @@ import { BRAND } from "@/core/constants/constant";
 import { useTheme } from "@/core/contexts/theme";
 
 export default async function RegisterPage() {
-  const { textColor } = useTheme();
+  // const { textColor } = useTheme();
 
   const auth = await getTranslations("auth");
 
@@ -20,7 +20,7 @@ export default async function RegisterPage() {
       <div className="d-flex align-items-center justify-content-between mb-2">
         <h4 className="mb-0">
           {auth("register_title") + " "}{" "}
-          <span className={textColor as string}>{BRAND.name}</span>
+          <span className={"text-warning"}>{BRAND.name}</span>
         </h4>
         <Link href="/" className="back-home">
           <RiHome4Line />

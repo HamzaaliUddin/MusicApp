@@ -13,7 +13,7 @@ import { BRAND } from "@/core/constants/constant";
 import { useTheme } from "@/core/contexts/theme";
 
 export default async function AnalyticsPage() {
-  const { textColor } = useTheme();
+  // const { textColor } = useTheme();
   const locale = await getTranslations();
 
   /**
@@ -54,7 +54,7 @@ export default async function AnalyticsPage() {
         <div className="section">
           <div className="mb-5 fs-6">
             <h3>
-              Hi <span className={textColor as string}>Admin</span>,
+              Hi <span className={"text-danger"}>Admin</span>,
               {locale("welcome_to_the") + " " + BRAND.name}
             </h3>
             <p>{locale("analytics_subtitle")}</p>
