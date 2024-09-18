@@ -134,6 +134,9 @@ const Theme: React.FC<ThemeProps> = (props) => {
   const [textColor, setTextColor] = useState<String>(
     themeMode === "light" ? "text-warning" : "text-danger"
   );
+  const [bgColor, setBgColor] = useState<String>(
+    themeMode === "light" ? "bg-warning" : "bg-danger"
+  );
   console.log(buttonColor, "COLOR");
   // Save themeMode to localStorage whenever it changes
   useEffect(() => {

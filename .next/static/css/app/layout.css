@@ -12601,6 +12601,7 @@ html:not([dir=rtl]) .feature .feature__icon:before {
   padding: 3rem 2rem;
   color: #ffffff;
 }
+
 .newsletter .newsletter__title-text {
   color: #000000;
 }
