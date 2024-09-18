@@ -12,22 +12,29 @@ import Image from "next/image";
 import { THEME_MODE } from "./../constants/constant";
 
 import { BRAND, SIDEBAR_TOGGLE } from "../constants/constant";
+import { useTheme } from "../contexts/theme";
 
 const Brand: React.FC = () => {
   /**
    *
    * Handle link `onClick` event
    */
+  const { theme } = useTheme();
+
   const handleClick = () => {
     document.body.removeAttribute(SIDEBAR_TOGGLE);
   };
-  console.log(THEME_MODE === "light" ? BRAND.logo : BRAND.dark_logo, "LOGO");
+  console.log(theme, "LOGO");
   return (
-    <Link className="brand" href={BRAND.href} onClick={handleClick}>
+    <Link
+      className="brand d-flex justify-content-center align-items-center"
+      href={BRAND.href}
+      onClick={handleClick}
+    >
       <Image
-        src={THEME_MODE === "light" ? BRAND.logo : BRAND.dark_logo}
-        width={104}
-        height={44}
+        src={theme === "light" ? BRAND.logo : BRAND.dark_logo}
+        width={100}
+        height={32}
         alt={BRAND.name}
         priority
       />

@@ -291,7 +291,7 @@ export const DEFAULT_USER = {
 export const BRAND = {
   name: "Listen app",
   href: "/",
-  logo: "/images/logos/logo.svg",
+  logo: "/images/logos/logo.png",
   dark_logo: "/images/logos/logo-dark.png",
   email: "info@listenapp.com",
 };
