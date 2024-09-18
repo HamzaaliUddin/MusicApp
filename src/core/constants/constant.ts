@@ -289,11 +289,11 @@ export const DEFAULT_USER = {
 //
 // Brand object
 export const BRAND = {
-  name: "Listen app",
+  name: "Groove app",
   href: "/",
   logo: "/images/logos/logo.png",
   dark_logo: "/images/logos/logo-dark.png",
-  email: "info@listenapp.com",
+  email: "info@grooveapp.com",
 };
 
 //
@@ -357,9 +357,9 @@ export const THEME_MODE: ThemeModeTypes = "light";
 
 //
 // Components theme
-export const HEADER_THEME: ComponentSkinTypes = "blue";
+export const HEADER_THEME: ComponentSkinTypes = "red";
 export const SIDEBAR_THEME: ComponentSkinTypes = "blue";
-export const PLAYER_THEME: ComponentSkinTypes = "blue";
+export const PLAYER_THEME: ComponentSkinTypes = "yellow";
 
 //
 // Global HTML classes

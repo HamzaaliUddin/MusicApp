@@ -24,7 +24,6 @@ const Brand: React.FC = () => {
   const handleClick = () => {
     document.body.removeAttribute(SIDEBAR_TOGGLE);
   };
-  console.log(theme, "LOGO");
   return (
     <Link
       className="brand d-flex justify-content-center align-items-center"
@@ -34,7 +33,7 @@ const Brand: React.FC = () => {
       <Image
         src={theme === "light" ? BRAND.logo : BRAND.dark_logo}
         width={100}
-        height={32}
+        height={28}
         alt={BRAND.name}
         priority
       />
